@@ -53,13 +53,13 @@ public class Enciklopedija extends Knjiga {
 	}
 
 	@Override
-	public void informacijeOKnjizi() {
-		super.informacijeOKnjizi();
+	public void informacijeOKnjizi(int i) {
+		super.informacijeOKnjizi(i);
 		System.out.println("Tip enciklopedije: " + getTipEnciklopedije());
 	}
 
 	@Override
-	public void osnovneInformacije() {
+	public void osnovneInformacije(int i) {
 		System.out.println("\n" + getTipEnciklopedije() + " enciklopedija: " + getNaslov());
 	}
 }

@@ -41,14 +41,14 @@ static Scanner input = new Scanner(System.in);
 	}
 
 	@Override
-	public void informacijeOKnjizi() {
-		super.informacijeOKnjizi();
+	public void informacijeOKnjizi(int i) {
+		super.informacijeOKnjizi(i);
 		System.out.println("Tip knjige: " + getTipOstalo());
 	}
 	
 	@Override
-	public void osnovneInformacije() {
-		super.osnovneInformacije();
+	public void osnovneInformacije(int i) {
+		super.osnovneInformacije(i);
 	}
 
 }

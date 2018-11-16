@@ -2,8 +2,7 @@ package knjiga;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-import enciklopedijeRecnici.TipRecnika;
+import osnovniPaket.*;
 
 public class Knjiga {
 
@@ -63,7 +62,7 @@ public class Knjiga {
 		Knjiga.godinaIzdanja = godinaIzdanja;
 	}
 
-	public static String getPovez() {
+	public String getPovez() {
 		return povez;
 	}
 
@@ -71,7 +70,7 @@ public class Knjiga {
 		Knjiga.povez = povez;
 	}
 
-	public static String getFormatKnjige() {
+	public String getFormatKnjige() {
 		return formatKnjige;
 	}
 
@@ -79,7 +78,7 @@ public class Knjiga {
 		Knjiga.formatKnjige = formatKnjige;
 	}
 
-	public static Integer getBrojStrana() {
+	public Integer getBrojStrana() {
 		return brojStrana;
 	}
 
@@ -161,14 +160,18 @@ public class Knjiga {
 
 	}
 
-	public void informacijeOKnjizi() {
-		System.out.println("\nIzdavac: " + getIzdavac() + "\nAutor (grupa autora): " + getAutor() + "\nNaslov: "
-				+ getNaslov() + "\nGodina izdanja: " + getGodinaIzdanja() + "\nVrsta poveza: " + getPovez()
-				+ "\nFormat: " + getFormatKnjige() + "\nBroj strana: " + getBrojStrana());
+	public void informacijeOKnjizi(int n) {
+
+		System.out.println("\nIzdavac: " + Citac.listaKnjiga.get(n).getIzdavac() + "\nAutor (grupa autora): "
+				+ Citac.listaKnjiga.get(n).getAutor() + "\nNaslov: " + Citac.listaKnjiga.get(n).getNaslov()
+				+ "\nGodina izdanja: " + Citac.listaKnjiga.get(n).getGodinaIzdanja() + "\nVrsta poveza: "
+				+ Citac.listaKnjiga.get(n).getPovez() + "\nFormat: " + Citac.listaKnjiga.get(n).getFormatKnjige() + "\nBroj strana: "
+				+ Citac.listaKnjiga.get(n).getBrojStrana());
 	}
 
-	public void osnovneInformacije() {
-		System.out.println("\nAutor (grupa autora): " + getAutor() + "\nNaslov: " + getNaslov());
+	public void osnovneInformacije(int n) {
+		System.out.println("\nAutor (grupa autora): " + Citac.listaKnjiga.get(n).getAutor() + "\nNaslov: "
+				+ Citac.listaKnjiga.get(n).getNaslov());
 	}
 
 }

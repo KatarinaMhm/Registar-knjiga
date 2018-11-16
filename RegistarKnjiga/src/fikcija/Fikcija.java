@@ -49,6 +49,8 @@ public class Fikcija extends Knjiga {
 	// unos i informacije
 
 	static Scanner input = new Scanner(System.in);
+	
+	
 
 	public static Fikcija unosFikcije() {
 
@@ -80,15 +82,15 @@ public class Fikcija extends Knjiga {
 	}
 
 	@Override
-	public void informacijeOKnjizi() {
-		super.informacijeOKnjizi();
+	public void informacijeOKnjizi(int i) {
+		super.informacijeOKnjizi(i);
 		System.out
 				.println("Rod: " + getRod() + "\nVrsta: " + getVrsta() + "\nKnjizevni Period: " + getKnjizevniPeriod());
 	}
 
 	@Override
-	public void osnovneInformacije() {
-		super.osnovneInformacije();
+	public void osnovneInformacije(int i) {
+		super.osnovneInformacije(i);
 	}
 
 }

@@ -41,13 +41,13 @@ public class Struke extends Knjiga {
 	}
 
 	@Override
-	public void informacijeOKnjizi() {
-		super.informacijeOKnjizi();
+	public void informacijeOKnjizi(int i) {
+		super.informacijeOKnjizi(i);
 		System.out.println("Strucna oblast: " + getStrucnaOblast());
 	}
 	
 	@Override
-	public void osnovneInformacije() {
-		super.osnovneInformacije();
+	public void osnovneInformacije(int i) {
+		super.osnovneInformacije(i);
 	}
 }
