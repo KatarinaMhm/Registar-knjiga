@@ -9,11 +9,9 @@ import knjiga.Knjiga;
 import ostalo.Ostalo;
 import struke.Struke;
 
-public class Citac {
+public class Citac implements ListaKnjiga {
 
 	static Scanner input = new Scanner(System.in);
-
-	static List<Knjiga> listaKnjiga = new ArrayList<Knjiga>();
 
 	public static void unesiKnjigu() {
 
